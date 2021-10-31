@@ -10,5 +10,5 @@ func main() {
 	r := gin.Default()
 	r.Use(cors.Default())
 	r.POST("/promptpay", handlers.CreatePromptPay)
-	r.Run()
+	r.Run(":3001")
 }
